@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaLearn-Sertificate</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    <style>
+       <style>
+        body{
+            background: #badbcc;
+        }
+        .form-control {
+            height: 30px;
+        }
+        .color-1{
+            color: #ffffff;
+        }
+        .generating{
+            margin-left: 420px;
+            margin-top: 200px;
+            margin-right: 430px;
+        }
+        .bottom{
+            margin-top: 190px;
+        }
+    </style>
+</head>
+<body>
+<main id="main">
+    <nav class="navbar navbar-expand-lg" style="background: #04414d">
+        <div class="container-fluid">
+            <h1 style="font-family: 'Arial Black'">JavaLearn</h1>
+            <div class="collapse navbar-collapse">
+                <div class="navbar-nav">
+                    <a href="{% url 'index' %}" class="nav-item nav-link color-1">Home</a>
+                    <a href="{% url 'materials' %}" class="nav-item nav-link color-1">Materials</a>
+                    <a href="{% url 'blog' %}" class="nav-item nav-link color-1">Blog</a>
+                </div>
+                <div class="navbar-nav ms-auto">
+                    <a href="login.html" class="nav-item nav-link">Login</a>
+                    <a href="signup.html" class="nav-item nav-link">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <hr>
+
+    <div class="card generating">
+        <div class="card-header"><h5>Generating sertificate...</h5></div>
+        <div class="card-body "><h3>You can download your sertificate <a href="#">here</a> </h3></div>
+    </div>
+</main>
+<footer class="footer bottom"><hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <p class="mb-1">Copyright &copy; Mihaela Obadikj 2022</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="./js/bootstrap.bundle.js"></script>
+</body>
+</html>

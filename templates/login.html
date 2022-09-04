@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Log in 186045</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    <style>
+     <style>
+        body{
+            background: #badbcc;
+            width: auto;
+        }
+        .form-control {
+            height: 40px;
+            width: 300px;
+        }
+        .signup-form {
+            width: 350px;
+            margin: 30px auto;
+
+        }
+        .signup-form form {
+            border-radius: 6px;
+            background: #f8d7da;
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+        }
+        .signup-form .form-group {
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="signup-form">
+    <form>
+        <h1>Welcome back!</h1>
+        <h2>Log in</h2>
+
+        <div class="form-group">
+            <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col"><input type="password" class="form-control" name="password" placeholder="Password" required="required"></div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <a href="{% url 'index' %}" class="btn btn-success btn-sm" role="button">Log in</a>
+            </div>
+            <div class="col"><p>Forgot your password? Click <a href="#">here</a></p></div>
+
+        </div>
+    </form>
+</div>
+</body>
+<script src="./js/bootstrap.bundle.js"></script>
+
+</html>
