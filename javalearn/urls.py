@@ -23,6 +23,7 @@ from django.conf.urls.static import static
 from django.views.static import serve
 
 urlpatterns = [
+    path('',lambda request: redirect('index/', permanent=False)),
     path('admin/', admin.site.urls),
     path('index/', index, name="index"),
     path('blog/', blog, name="blog"),
