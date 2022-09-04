@@ -1,1 +1,1 @@
-web: gunicorn javalearnsystem.wsgi --log-file -
+web: gunicorn javalearn.wsgi --log-file -
